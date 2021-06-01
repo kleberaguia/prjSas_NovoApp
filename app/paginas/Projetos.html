@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../app/css/styleSistema.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Document</title>
+</head>
+<body>
+  <div id="cadastroProjeto" class="CadastroP">         
+    <form>
+        <h1>Projetos: </h1>
+        <div class="conteudo">                    
+            <div class="row">
+                <div class="col-md-12">
+                    <label for="formGroupExampleInput" class="form-label">Nome do Projeto: </label>
+                    <input type="text" id="textprojeto" class="form-control" placeholder="Nome do Projeto">
+                </div>                             
+            </div>
+            <br>               
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="formGroupExampleInput" class="form-label">Cliente: </label>
+                    <select type="select" id='cliente' class="form-control">
+                        <option>Bradesco</option>
+                        <option>XP</option>
+                        <option>Rural</option>
+                      
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label for="formGroupExampleInput" class="form-label">Tipo de Projeto: </label>
+                    <select type="select" id='TipoProjeto' class="form-control">
+                        <option>Demanda</option>
+                        <option>Sustentação</option>                      
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="formGroupExampleInput" class="form-label">Departamento: </label>
+                    <select type="select" id='Departamento' class="form-control">
+                        <option>Cartão de Crédito</option>
+                        <option>DGD</option>
+                        <option>Cartões Fraude</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label for="formGroupExampleInput" class="form-label">Gestor: </label>
+                    <select type="select" id='Gestor' class="form-control">
+                        <option>Marcelo Bressan</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-12">
+                    <label for="formGroupExampleInput" class="form-label">Descrição: </label>
+                    <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3"></textarea>
+                </div>
+                
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-4">
+                    <label for="formGroupExampleInput" class="form-label">Data Inicio: </label>
+                    <input type="date" id='datainicio' class="form-control"></input>
+                </div>
+                <div class="col-md-4">
+                    <label for="formGroupExampleInput" class="form-label">Prazo: </label>
+                    <input type="date" id='dataPrazo' class="form-control" rows="3"></input>
+                </div>
+                <div class="col-md-4">
+                    <label for="formGroupExampleInput" class="form-label">Fim: </label>
+                    <input type="date" id='dataFim' class="form-control"></input>
+                </div>                                                
+            </div>
+            <br>                
+        </div>
+    </form>
+    <div class="row">
+        <div>                        
+            <button class="btn btn-sm btn-danger" id="cancelarprojeto">Cancelar</button>  
+            
+            <button type="button" class="btn btn-sm btn-success"  id="salvarprojeto">Salvar</button>
+        </div>                      
+    </div>
+</div>
+
+</body>
+</html>

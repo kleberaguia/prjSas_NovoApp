@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f9f9f9;
+}
+
+#chec{
+    display: none;
+
+}
+.img{
+    background-color: #013459 ;
+}
+#icone{
+    cursor: pointer;
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+}
+.barra{
+    background-color: #333;
+    width: 200px;
+    height: 87%;
+    position: absolute;
+    transition: .2s linear;
+    left: -113px;
+   
+
+
+}
+.bloco{
+    
+    width: 700px;
+    height: 87%;
+    position: absolute;
+    transition: .2s linear;
+    left: 113px;
+   
+}
+
+
+
+.gridP{
+    width: 700px;
+    display: block;
+    position: absolute;
+    left:113px;
+    transition: .2s linear;
+    top:150px;
+
+}
+nav{
+    width: 100%;
+    position: absolute;
+    top: 60px;
+
+}
+
+.barra nav a div img{
+    padding-left: 80px;
+    vertical-align:middle;
+}
+
+nav a{
+    text-decoration: none;
+
+}
+
+.link{
+    background-color: #494950;
+    padding: 20px;
+    font-family: Arial;
+    font-size: 12px;
+    transition: .2s linear;
+    color: #f4f4f9;
+    border-bottom: 2px solid #222;
+
+}
+.link:hover{
+    background-color: #050542;
+} 
+
+#chec:checked ~ .barra{
+    
+    
+    transform: translateX(113px);
+}
+
+#chec:checked ~ .bloco{
+    
+    transform: translateX(115px);
+}
+
+#chec:checked ~ .gridP{
+    transform: translateX(115px);
+}
+
+
+.imglg{
+    width: 200px;
+    display: block;
+}
+
+#cadastroProjeto{
+    display: none;
+}
+
+.row div textarea{
+    background-color: cornsilk;
+}
+
+
+span{
+    padding-left: 50px;
+}
+
+@media(max-width: 768px) {
+    .imglg{
+        width: 25%;
+        display: block;
+        margin-left: 30%;
+        margin-right: 35%;        
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .barra{
+        width: 100%;
+        height: 39%;        
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        left: 0px;
+    }
+
+    #chec:checked ~ .barra{    
+        transform: translateX(-1500px);
+    }
+    
+span{
+    padding-left: 1100px;
+}
+
+    .bloco{
+        width: 100%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        left: 0;
+        top: 450px;
+        margin-left: 20px;
+    }
+
+
+    .gridP{
+        width: 100%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        left: 0;
+        top: 470px;
+        margin-left: 20px;
+
+    }
+   
+    
+}
+
+@media(max-width: 360px) {
+    .bloco{
+        width: 100px;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        left: 0;
+        top: 450px;
+        margin-left: 20px;
+    }
+
+}

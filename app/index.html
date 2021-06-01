@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../app/css/styleSistema.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Sas</title>    
+</head>
+<body onload="load();"> 
+    <header>
+        <div class="row">
+            <div class="img">
+                <div class="col-mb-12">
+                    <img src="img/Logo.png" class="imglg">
+                </div>
+            </div>
+        </div>
+    </header>   
+    <section id="menu"> 
+        <input type="checkbox" id="chec"> 
+        <label id="icone" for="chec"><img src="img/icone.png"></label>
+        <div class="barra">
+            <nav>
+                <a href="#"><div class="link" id="projeto">Projetos<span><img src='img/projeto.ico' height="18px" /></span></div></a>
+                <a href="#"><div class="link" id="Demanda">Demandas<span><img src='img/demanda.ico' height="18px" /></span></div></a>
+                <a href="#"><div class="link" id="Sustentacao">Sustentação<span><img src='img/sustentacao.ico' height="18px" /></span></div></a>
+                <a href="#"><div class="link" id="Exportar">Exportar<span><img src='img/exportar.ico' height="18px" /></span></div></a>
+            </nav>
+        </div>        
+        <div  class="bloco">
+            <div id="conteudoHTML"></div> 
+        </div>
+        
+        <div id="Grid" class="gridP">
+            <div [ngClass]="{'col-sm-6':alunoSelecionado,'col-sm-12':!alunoSelecionado}">
+                <app-titulo [titulo]="Titulo">
+                    <!--  <button class="btn btn-sm btn-success" (click)="ProjetoNovo()">Cadastrar Projeto</button> --> 
+                </app-titulo>
+                <table class="table table-hover mr-auto">
+                    <thead>
+                        <tr>
+                            <th scope="col">Visualizar</th>
+                            <th scope="col">#</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Data Inicio</th>                     
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let aluno of alunos">                        
+                            <th scope="row"></th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <div class="btn btn-sm btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-primary" id="editarprojeto">Editar</button>
+                                    <button class="btn btn-sm btn-outline-danger" (click)="DeletarAluno(aluno.id)">Deletar</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>  
+        
+    </section> 
+    <script src="../app/js/render.js" ></script>
+    <script src="../app/js/projetos.js" ></script>
+    
+</body>
+</html>
+<script src="../node_modules/jquery/dist/jquery.js"></script>
+<script>
+    
+    
+    /*  $(document).ready( function() {
+        $("#projeto").click(function(){
+            document.getElementById("conteudoHTML").innerHTML = document.getElementById("cadastroProjeto").innerHTML ;
+            $("#Grid").hide();
+            
+            
+            
+            $('#editarprojeto').click(function(){
+                document.getElementById("conteudoHTML").innerHTML = document.getElementById("cadastroProjeto").innerHTML ;
+                document.getElementById('Grid').style.left = 850 + '.px';
+            })
+            
+            $("#salvarprojeto").click(function(){
+                console.log("oiiiiiiiiiiiiiiiiiiiiii")
+            })
+            
+            $("#Demanda").click(function(){
+                document.getElementById("conteudoHTML").innerHTML = "Olá Demanda!";
+            })
+            $("#Sustentacao").click(function(){
+                document.getElementById("conteudoHTML").innerHTML = "Olá Sustentacao!";
+            })
+            $("#Exportar").click(function(){
+                document.getElementById("conteudoHTML").innerHTML = "Olá Exportar!";
+            })
+        });   })*/
+    </script>
+    
+    

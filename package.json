@@ -1,0 +1,24 @@
+{
+  "name": "prjsas_novoapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^13.0.0"
+  },
+  "dependencies": {
+    "@solid-js/cli": "^1.5.1",
+    "bootstrap": "^5.0.1",
+    "bootstrap-icons": "^1.5.0",
+    "express": "^4.17.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.6.0",
+    "node-adodb": "^5.0.3"
+  }
+}
